@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- Head section with metadata and styling links -->
+
+<head>
+    <title>Employees</title>
+    <link rel="icon" href="data/favicon.ico">
+    <link rel="stylesheet" href="css/StylingBodyPage.css">
+</head>
+
+<!-- Body section starts -->
+
+<body>
+
+    <!-- Container for the page title and navigation images -->
+    <div>
+
+        <!-- Heading with a class 'EmployeesTitle-Page' for styling -->
+        <h1 class="EmployeesTitle-Page">Employees</h1>
+
+        <!-- Business Icon image with class 'EmployeesBusiness-Icon' -->
+        <img class="EmployeesBusiness-Icon" src="data/Quality-Icon.png">
+
+        <!-- Home Page image with onclick navigation -->
+        <img onclick="window.location.href='BodyPage.html'" class="EmployeeHome-Page" src="data/HomePage.png">
+        <!-- Variable declared where Business-Icon will be stored into a class. -->
+
+    </div>
+
+    <!-- Container for additional images related to employees -->
+    <div class="EmployeesImg-Container">
+
+        <!-- Planet Icon image with class 'EmployeesPlanet-Icon' -->
+        <img class="EmployeesPlanet-Icon" src="data/Planet.png">
+
+        <!-- Neon Lines image with class 'EmployeesNeon-Lines' -->
+        <img class="EmployeesNeon-Lines" src="data/finishedlines.png">
+
+    </div>
+
+    <!-- Container for employee-related forms -->
+    <div>
+
+        <!-- Form for submitting new employee records -->
+        <form class="Employee-Form" method="post">
+            <h2>Submit New Employee</h2>
+
+            <!-- Employee Number -->
+            <label for="empNumInsert">Employee Number:</label>
+            <input type="text" id="empNumInsert" name="empNumInsert" placeholder="Enter Employee Number..." required>
+
+            <!-- Employee First Name -->
+            <label for="empFirstNameInsert">First Name:</label>
+            <input type="text" id="empFirstNameInsert" name="empFirstNameInsert" placeholder="Enter First Name..."
+                required>
+
+            <!-- Employee Middle Name -->
+            <label for="empMiddleNameInsert">Middle Name:</label>
+            <input type="text" id="empMiddleNameInsert" name="empMiddleNameInsert" placeholder="Enter Middle Name...">
+
+            <!-- Employee Last Name -->
+            <label for="empLastNameInsert">Last Name:</label>
+            <input type="text" id="empLastNameInsert" name="empLastNameInsert" placeholder="Enter Last Name..."
+                required>
+
+            <!-- Job Class -->
+            <label for="jobClassInsert">Job Class:</label>
+            <input type="text" id="jobClassInsert" name="jobClassInsert" placeholder="Enter Job Class..." required>
+
+            <!-- Employee Skill Level -->
+            <label for="empSkillLevelInsert">Skill Level:</label>
+            <select id="empSkillLevelInsert" name="empSkillLevelInsert" required>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+
+            <!-- Submit Button for Insert Employee Form -->
+            <input type="submit" value="Submit Employee">
+        </form>
+
+        <!-- Form for updating employee records -->
+        <form class="Employee-Form" method="post">
+            <h2>Update Employee</h2>
+
+            <!-- Employee Number (to identify the record to update) -->
+            <label for="updateEmpNum">Employee Number to Update:</label>
+            <input type="text" id="updateEmpNum" name="updateEmpNum" placeholder="Enter Employee Number to Update..."
+                required>
+
+            <!-- Updated Employee First Name -->
+            <label for="updatedEmpFirstName">Updated First Name:</label>
+            <input type="text" id="updatedEmpFirstName" name="updatedEmpFirstName"
+                placeholder="Enter Updated First Name..." required>
+
+            <!-- Updated Employee Middle Name -->
+            <label for="updatedEmpMiddleName">Updated Middle Name:</label>
+            <input type="text" id="updatedEmpMiddleName" name="updatedEmpMiddleName"
+                placeholder="Enter Updated Middle Name...">
+
+            <!-- Updated Employee Last Name -->
+            <label for="updatedEmpLastName">Updated Last Name:</label>
+            <input type="text" id="updatedEmpLastName" name="updatedEmpLastName"
+                placeholder="Enter Updated Last Name..." required>
+
+            <!-- Updated Job Class -->
+            <label for="updatedJobClass">Updated Job Class:</label>
+            <input type="text" id="updatedJobClass" name="updatedJobClass" placeholder="Enter Updated Job Class..."
+                required>
+
+            <!-- Updated Employee Skill Level -->
+            <label for="updatedEmpSkillLevel">Updated Skill Level:</label>
+            <select id="updatedEmpSkillLevel" name="updatedEmpSkillLevel" required>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+
+            <!-- Submit Button for Update Employee Form -->
+            <input type="submit" value="Update Employee">
+        </form>
+
+        <!-- Form for deleting employee records -->
+        <form class="Employee-Form" method="post">
+            <h2>Delete Employee</h2>
+
+            <!-- Removes Employee Number -->
+            <label for="deleteEmpNum">Employee Number to Delete:</label>
+            <input type="text" id="deleteEmpNum" name="deleteEmpNum" placeholder="Enter Employee Number to Delete..."
+                required>
+
+            <!-- Submit Button for Delete Employee Form -->
+            <input type="submit" value="Delete Employee">
+        </form>
+
+    </div>
+
+    <!-- Footer section with

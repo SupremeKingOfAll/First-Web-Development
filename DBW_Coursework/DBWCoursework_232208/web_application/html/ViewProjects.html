@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+
+    <head>
+        <title>ProjectView</title>
+        <link rel="icon" href="data/favicon.ico">
+        <link rel="stylesheet" href="css/StylingBodyPage.css">
+    </head>
+
+</head>
+
+<body>
+    <div>
+
+        <h1 class="ProjectTitle-Page">Projects</h1>
+        <img class="ProjectBusiness-Icon" src="data/Quality-Icon.png">
+        <!-- variable declared where Business-Icon will be stored into a class.-->
+
+    </div>
+
+    <div class="ProjectImg-Container">
+
+        <img class="ProjectPlanet-Icon" src="data/Planet.png">
+        <img class="ProjectNeon-Lines" src="data/finishedlines.png">
+        <img onclick="window.location.href='BodyPage.html'" class="Project-Home-Page" src="data/HomePage.png">
+
+
+    </div>
+
+    <div class="ProjectForm-Container">
+
+
+
+        <!-- Form for Inserting Project -->
+        <form class="Project-Form"  method="post">
+            <h2>Insert Project</h2>
+
+            <!-- Project Number -->
+            <label for="projNoInsert">Project Number:</label>
+            <input type="text" id="projNoInsert" name="projNoInsert" required>
+
+            <!-- Employee Number -->
+            <label for="empNumInsert">Employee Number:</label>
+            <input type="text" id="empNumInsert" name="empNumInsert" required>
+
+            <!-- Hours -->
+            <label for="hoursInsert">Hours:</label>
+            <input type="text" id="hoursInsert" name="hoursInsert" required>
+
+            <!-- Project Name -->
+            <label for="projNameInsert">Project Name:</label>
+            <input type="text" id="projNameInsert" name="projNameInsert" required>
+
+            <!-- Project Start Date -->
+            <label for="projStartDateInsert">Project Start Date:</label>
+            <input type="date" id="projStartDateInsert" name="projStartDateInsert" required>
+
+            <!-- Project End Date -->
+            <label for="projEndDateInsert">Project End Date:</label>
+            <input type="date" id="projEndDateInsert" name="projEndDateInsert" required>
+
+            <!-- Submit Button for Insert Form -->
+            <input type="submit" value="Insert Project">
+        </form>
+
+        <form class="Project-Form2"  method="post">
+            <h2>Update Project</h2>
+
+            <!-- Project Number -->
+            <label for="projNoUpdate">Project Number:</label>
+            <input type="text" id="projNoUpdate" name="projNoUpdate" required>
+
+            <!-- New Employee Number -->
+            <label for="newEmpNum">New Employee Number:</label>
+            <input type="text" id="newEmpNum" name="newEmpNum" required>
+
+            <!-- New Hours -->
+            <label for="newHours">New Hours:</label>
+            <input type="text" id="newHours" name="newHours" required>
+
+            <!-- New Project Name -->
+            <label for="newProjName">New Project Name:</label>
+            <input type="text" id="newProjName" name="newProjName" required>
+
+            <!-- New Project Start Date -->
+            <label for="newProjStartDate">New Project Start Date:</label>
+            <input type="date" id="newProjStartDate" name="newProjStartDate" required>
+
+            <!-- New Project End Date -->
+            <label for="newProjEndDate">New Project End Date:</label>
+            <input type="date" id="newProjEndDate" name="newProjEndDate" required>
+
+            <!-- Submit Button for Update Form -->
+            <input type="submit" value="Update Project">
+        </form>
+
+
+        <!-- Form for Deleting Project -->
+        <form class="Project-Form3"  method="post">
+            <h2>Delete Project</h2>
+
+            <!-- Project Number to Delete -->
+            <label for="projNoDelete">Project Number to Delete:</label>
+            <input type="text" id="projNoDelete" name="projNoDelete" required>
+
+            <!-- Submit Button for Delete Form -->
+            <input type="submit" value="Delete Project">
+        </form>
+
+    </div>
+    <div>
+
+        <footer  class="BodyPage-Footer">
+            
+                &copy; 2024 Enigma Inc. All rights reserved.
+            
+    </footer>
+
+    </div>
+
+
+</body>
